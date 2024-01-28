@@ -94,7 +94,7 @@
         --pink: hsl(330, 100%, 78%);
         --blue: hsl(212, 71%, 45%);
         --black: hsl(210, 4%, 22%);
-        --background: hsl(0, 100%, 100%);
+        --background: hsl(39, 100%, 90%);
         --box-shadow-color: var(--yellow);
         --overlap-top: 25px;
         --overlap-left: 25px;
@@ -168,26 +168,12 @@
           6px 6px var(--box-shadow-color), 7px 7px var(--box-shadow-color),
           8px 8px var(--box-shadow-color), 9px 9px var(--box-shadow-color),
           10px 10px var(--box-shadow-color);
-        mix-blend-mode: multiply;
-        background-blend-mode: multiply;
+        /* mix-blend-mode: multiply; */
+        /* background-blend-mode: multiply; */
       }
     </style>
   </head>
   <body>
-    <div class="logo-container" style="">
-      <h1
-        class="logo"
-        style="
-          color: var(--black);
-          /* background-image: var(--noise-image); */
-          background-blend-mode: multiply;
-        "
-      >
-        underline
-      </h1>
-      <!-- <div style="width: 1000px;top: 100px;left: -465px;margin-top: 0;position: absolute;"><div class="circle blue noisy" style="width: 10%; padding-top: 10%;"></div> -->
-      <div class="wave"></div>
-    </div>
     {{content}}
   </body>
 </html>
