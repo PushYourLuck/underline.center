@@ -37,6 +37,25 @@ colors:
   </div>
   <div style="display:inline-block;width:45%;padding-left:20px">
   <div class="logo-container" style="">
+  <div style="
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    background-blend-mode: multiply;
+    width: 85px;
+    padding-top: 85px;
+    background-color: var(--{{colorA}});
+    content:
+    &quot; &quot;;
+    /* margin-left: 10px; */
+    padding: auto;
+    position: relative;
+    top: 180px;
+    left: -8px;
+    /* z-index: -1; */
+    /* margin-left: 4px; */
+    background-image: var(
+    --noise-image);
+"></div>
     <h1
       class="logo logo-large"
       style="
