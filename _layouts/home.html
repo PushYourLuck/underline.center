@@ -7,7 +7,7 @@
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,700;1,800&display=swap&family=Lora:wght@600" rel="stylesheet" />
   <style>
     body {
       background-color: var(--background);
@@ -110,7 +110,7 @@
       --overlap-left: 25px;
       --overlap-top-negative: calc(-1 * var(--overlap-top));
       --overlap-left-negative: calc(-1 * var(--overlap-left));
-      --noise-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAGFBMVEUAAAD08vT8/vz07uz09vT89vT8+vzs7uxKZKfXAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAA0hJREFUOI0Vk7G2wigURfkFEEkNQVJHM0kN8kit643W9xqhBnnk98fpT3HW3ucQHW4DRtXQ/kD5V0R/bWqK50Yem1njSWpGd4HUeej6rMPzSoryBTXq2wqt4nliw23wd3MhUnC6mR5jZT4ZbqloqBk0oq/61p3X+fbirlOiMDHHjtlMHnPICiuPFRaj0LB2TA5AkgnrQr3TnV45M+io/+BRCU3KlBNGeziOXtAZ1mBNLrvYibj/uC5a5cOyoFwG/dDvYBZOBn4Cts3zq+MrC5L2KrlrpyNpMGx81dRYzbVn0GnnTmtDIiz1ne090mqkC4Ih4oKWkT/PTtTAZVWwijZscqAG7SQJHNK+vqsyKTtjWUp169C3OwGZ7EYncJJhSN57HL2OgRFwb3NIRTLehT68WaDxaauMxL3oCSRATBBRZdy1yXPzmlQQ8cnBgHFBiWc62Hk6hz0SPWU7lyI6qXRZ6nYBf9ir4eQvNDcK48RNrWUq8CfGvTgXyDUWKsUqFWUVNF8gMkHjWMhvK8ZSfF1xfSkdTOk0MDQzERIYS/xHV2Ul3yFYeD2a46QylAihZcPqZhl2dQtS0w95mSZrY+yKyGwof8U16bMFEgrdw4L1S9uIcLf/bKHVGALJ2sRfwVZq5MUYKYAneox3QaApb75Mvm3NawuAMdAl0UZAuWOOFyt8ymeNL0ZFtby7kyYnJvUw2pCsMvPWMnAED0S0jvsYNK3wsePxzA4mD2HZCGUMVtUZbCFgtSIMhzceRSTetezK6gYZE8o0MD9hn+FJ0FDHAPXQxfTNg/x7f01rIPYZ6cKp37fgfv6n+IlOowpEOxgF9PX0AQULzVfLXH4GS4IcFO4UolK8/w7NRE1VNkhwPDwwZhbZaf0MmWV51v3qLHnAksPtR7nib0rsfNu47iROpA4yPM60Wa4vGnQv2pRaoCup94j9vm97vF5SJ7MNfMO1AVEAm/Oq3/aH44F1yPRE427JaH6bE40OgB/Iu8vSwMYqkiw8KjuaeExFH+buObK/MqaVfGcP7nqnOaqTRdHhrxVJikK86ZPPVMv/z73CV8HTD/k4ED2IFrW/vtyWd+nd5i1b1GiIMV9F/S6Z3ZQsbMyjVa0L9D9lMSe1cKiAlQAAAABJRU5ErkJggg==);
+      --noise-image: url(data:image/png;base64,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);
     }
 
     .logo {
@@ -118,6 +118,15 @@
       text-decoration: wavy;
       text-decoration-style: wavy;
       font-size: 100px;
+    }
+
+    .logo-large {
+      font-weight: 800;
+      font-size: 93px;
+    }
+
+    .logo-container {
+      transform: perspective(300px) rotateZ(-2deg) rotateY(-2deg);
     }
 
     .wave {
@@ -139,6 +148,10 @@
       mix-blend-mode: multiply;
       margin-top: -84px;
       margin-left: 5px;
+    }
+
+    .wave-large {
+      margin-top: -78px;
     }
 
     .wave:before {

@@ -17,6 +17,8 @@ colors:
 
 {%for colorA in page.colors %}
   {%for colorB in page.colors %}
+  <div style="">
+  <div style="display:inline-block;width:45%;padding-right:20px">
   <div class="logo-container" style="">
     <h1
       class="logo"
@@ -32,9 +34,28 @@ colors:
     <!-- <div style="width: 1000px;top: 100px;left: -465px;margin-top: 0;position: absolute;"><div class="circle blue noisy" style="width: 10%; padding-top: 10%;"></div> -->
     <div class="wave" style="--c:var(--{{colorA}})"></div>
   </div>
+  </div>
+  <div style="display:inline-block;width:45%;padding-left:20px">
+  <div class="logo-container" style="">
+    <h1
+      class="logo logo-large"
+      style="
+        color: white;
+        /* background-image: var(--noise-image); */
+        /* background-blend-mode: multiply; */
+        --box-shadow-color: var(--{{colorB}});
+      "
+    >
+      underline
+    </h1>
+    <!-- <div style="width: 1000px;top: 100px;left: -465px;margin-top: 0;position: absolute;"><div class="circle blue noisy" style="width: 10%; padding-top: 10%;"></div> -->
+    <div class="wave wave-large" style="--c:var(--{{colorA}})"></div>
+  </div>
+  </div>
+  </div>
   {%endfor%}
 {%endfor%}
-
+  
 <div class="container">
   {%for colorA in page.colors %}
   <div class="item"><h3>{{colorA}}</h3></div>
