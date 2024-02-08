@@ -15,62 +15,13 @@ colors:
   - black
 ---
 
+
 {%for colorA in page.colors %}
   {%for colorB in page.colors %}
-  <div style="">
-  <div style="display:inline-block;width:45%;padding-right:20px">
-  <div class="logo-container" style="">
-    <h1
-      class="logo"
-      style="
-        color: white;
-        /* background-image: var(--noise-image); */
-        /* background-blend-mode: multiply; */
-        --box-shadow-color: var(--{{colorB}});
-      "
-    >
-      underline
-    </h1>
-    <!-- <div style="width: 1000px;top: 100px;left: -465px;margin-top: 0;position: absolute;"><div class="circle blue noisy" style="width: 10%; padding-top: 10%;"></div> -->
-    <div class="wave" style="--c:var(--{{colorA}})"></div>
-  </div>
-  </div>
-  <div style="display:inline-block;width:45%;padding-left:20px">
-  <div class="logo-container" style="">
-  <div style="
-    border-radius: 50%;
-    mix-blend-mode: multiply;
-    background-blend-mode: multiply;
-    width: 85px;
-    padding-top: 85px;
-    background-color: var(--{{colorA}});
-    content:
-    &quot; &quot;;
-    /* margin-left: 10px; */
-    padding: auto;
-    position: relative;
-    top: 180px;
-    left: -8px;
-    /* z-index: -1; */
-    /* margin-left: 4px; */
-    background-image: var(
-    --noise-image);
-"></div>
-    <h1
-      class="logo logo-large"
-      style="
-        color: white;
-        /* background-image: var(--noise-image); */
-        /* background-blend-mode: multiply; */
-        --box-shadow-color: var(--{{colorB}});
-      "
-    >
-      underline
-    </h1>
-    <!-- <div style="width: 1000px;top: 100px;left: -465px;margin-top: 0;position: absolute;"><div class="circle blue noisy" style="width: 10%; padding-top: 10%;"></div> -->
-    <div class="wave wave-large" style="--c:var(--{{colorA}})"></div>
-  </div>
-  </div>
+  <div style="display:inline-block;">
+    <div style="width:400px;height:auto;display:inline-block;">
+      {% include logo/underline-svg.html logo_color=colorA squiggle_color=colorB %}
+    </div>
   </div>
   {%endfor%}
 {%endfor%}
