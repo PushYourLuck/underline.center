@@ -126,14 +126,23 @@
       }
 
       .squiggle {
+        display: inline-block;
+        position: relative;
+        overflow-x: clip;
+      }
+      .squiggle::before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        /* left: -50%; */
         background: url("assets/underline/squiggle.svg") repeat-x;
         background-size: 140px;
         background-position: 0% 100%;
         box-decoration-break: clone;
-        background-color: ;
         -webkit-box-decoration-break: clone;
         mix-blend-mode: multiply;
-        display: inline-block;
+        animation: move 15s infinite linear reverse;
       }
       .squiggle span {
         text-wrap: nowrap;
