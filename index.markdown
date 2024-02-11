@@ -5,4 +5,4 @@
 layout: underline
 ---
 
-<h1 style="text-align: center;">An events space for <mark class="squiggle">your community</mark>.</h1>
+<h1 style="text-align: center;">An events space for <div class="squiggle"><span>your community</span></div>.</h1>

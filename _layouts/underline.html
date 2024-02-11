@@ -1,145 +1,174 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@next/css/pico.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,700;1,800&display=swap&family=Lora:wght@600" rel="stylesheet" /> -->
-  <style>
-    body {
-      background-color: var(--background);
-      /* font-family: "Sansita", sans-serif; */
-      /* font-weight: 700;  */
-      /* font-style: italic; */
-      /* background-image: var(--noise-image); */
-      background-blend-mode: multiply;
-    }
-
-
-
-    :root {
-      --red: hsl(10, 67%, 54%);
-      --orange: hsl(20, 100%, 71%);
-      --aqua: hsl(194, 62%, 61%);
-      --green: hsl(146, 58%, 34%);
-      --yellow: hsl(52, 96%, 57%);
-      --teal: hsl(195, 48%, 34%);
-      --pink: hsl(330, 100%, 78%);
-      --blue: hsl(212, 71%, 45%);
-      --black: hsl(210, 4%, 22%);
-      --background: #EFE6D7;
-      --box-shadow-color: var(--yellow);
-      --overlap-top: 25px;
-      --overlap-left: 25px;
-      --overlap-top-negative: calc(-1 * var(--overlap-top));
-      --overlap-left-negative: calc(-1 * var(--overlap-left));
-      --noise-image: url(data:image/png;base64,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);
-
-      /* --pico-font-family: "Sansita", sans-serif; */
-      /* --pico-font-weight: 700; */
-    }
-
-
-    .wave {
-      --c: var(--red);
-      /* Color */
-      --t: 7px;
-      /* Thickness */
-      --h: 24px;
-      /* Height  */
-      --w: 72px;
-      /* Width  */
-      --p: 11px;
-      /* adjust this to correct the position when changing the other values*/
-
-      width: calc(var(--w) * 6);
-      height: calc(var(--h) + 10px);
-      overflow: hidden;
-      position: relative;
-      mix-blend-mode: multiply;
-      margin-top: -84px;
-      margin-left: 5px;
-    }
-
-    .wave-large {
-      margin-top: -78px;
-    }
-
-    .wave:before {
-      content: "";
-      position: absolute;
-      padding: 5px 0;
-      top: 0;
-      left: 0;
-      width: 200%;
-      bottom: 0;
-
-      background: radial-gradient(farthest-side at 50% calc(100% + var(--p)),
-          transparent 47%,
-          var(--c) 50% calc(50% + var(--t)),
-          transparent calc(52% + var(--t))),
-        radial-gradient(farthest-side at 50% calc(0% - var(--p)),
-          transparent 47%,
-          var(--c) 50% calc(50% + var(--t)),
-          transparent calc(52% + var(--t)));
-
-      background-size: var(--w) var(--h);
-      background-position: calc(var(--w) / 2) calc(-1 * (var(--h) / 2)),
-        0px calc(var(--h) / 2);
-      background-repeat: repeat-x;
-      background-origin: content-box;
-
-      animation: move 10s infinite linear reverse;
-    }
-
-    @keyframes move {
-      to {
-        transform: translateX(-50%);
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@next/css/pico.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,700;1,800&display=swap&family=Lora:wght@600" rel="stylesheet" /> -->
+    <style>
+      html {
+        height: 100%;
       }
-    }
+      body {
+        background-color: var(--background);
+        /* font-family: "Sansita", sans-serif; */
+        /* font-weight: 700;  */
+        /* font-style: italic; */
+        /* background-image: var(--noise-image); */
+        background-blend-mode: multiply;
+        height: 100%;
+      }
 
-    .logo {
-      text-shadow: 1px 1px var(--box-shadow-color), 2px 2px var(--box-shadow-color), 3px 3px var(--box-shadow-color), 4px 4px var(--box-shadow-color), 5px 5px var(--box-shadow-color), 6px 6px var(--box-shadow-color), 7px 7px var(--box-shadow-color), 8px 8px var(--box-shadow-color), 9px 9px var(--box-shadow-color), 10px 10px var(--box-shadow-color), 11px 11px var(--box-shadow-color), 12px 12px var(--box-shadow-color), 13px 13px var(--box-shadow-color), 14px 14px var(--box-shadow-color), 15px 15px var(--box-shadow-color), 16px 16px var(--box-shadow-color), 17px 17px var(--box-shadow-color), 18px 18px var(--box-shadow-color), 19px 19px var(--box-shadow-color), 20px 20px var(--box-shadow-color);
-      /* mix-blend-mode: multiply; */
-      /* background-blend-mode: multiply; */
-    }
+      :root {
+        --red: hsl(10, 67%, 54%);
+        --orange: hsl(20, 100%, 71%);
+        --aqua: hsl(194, 62%, 61%);
+        --green: hsl(146, 58%, 34%);
+        --yellow: hsl(52, 96%, 57%);
+        --teal: hsl(195, 48%, 34%);
+        --pink: hsl(330, 100%, 78%);
+        --blue: hsl(212, 71%, 45%);
+        --black: hsl(210, 4%, 22%);
+        --background: #efe6d7;
+        --box-shadow-color: var(--yellow);
+        --overlap-top: 25px;
+        --overlap-left: 25px;
+        --overlap-top-negative: calc(-1 * var(--overlap-top));
+        --overlap-left-negative: calc(-1 * var(--overlap-left));
+        --noise-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBgYGHh4d5eXlzc3OLi4ubm5uVlZWPj4+NjY19fX2JiYl/f39ra2uRkZGZmZlpaWmXl5dvb29xcXGTk5NnZ2c8TV1mAAAAG3RSTlNAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAvEOwtAAAFVklEQVR4XpWWB67c2BUFb3g557T/hRo9/WUMZHlgr4Bg8Z4qQgQJlHI4A8SzFVrapvmTF9O7dmYRFZ60YiBhJRCgh1FYhiLAmdvX0CzTOpNE77ME0Zty/nWWzchDtiqrmQDeuv3powQ5ta2eN0FY0InkqDD73lT9c9lEzwUNqgFHs9VQce3TVClFCQrSTfOiYkVJQBmpbq2L6iZavPnAPcoU0dSw0SUTqz/GtrGuXfbyyBniKykOWQWGqwwMA7QiYAxi+IlPdqo+hYHnUt5ZPfnsHJyNiDtnpJyayNBkF6cWoYGAMY92U2hXHF/C1M8uP/ZtYdiuj26UdAdQQSXQErwSOMzt/XWRWAz5GuSBIkwG1H3FabJ2OsUOUhGC6tK4EMtJO0ttC6IBD3kM0ve0tJwMdSfjZo+EEISaeTr9P3wYrGjXqyC1krcKdhMpxEnt5JetoulscpyzhXN5FRpuPHvbeQaKxFAEB6EN+cYN6xD7RYGpXpNndMmZgM5Dcs3YSNFDHUo2LGfZuukSWyUYirJAdYbF3MfqEKmjM+I2EfhA94iG3L7uKrR+GdWD73ydlIB+6hgref1QTlmgmbM3/LeX5GI1Ux1RWpgxpLuZ2+I+IjzZ8wqE4nilvQdkUdfhzI5QDWy+kw5Wgg2pGpeEVeCCA7b85BO3F9DzxB3cdqvBzWcmzbyMiqhzuYqtHRVG2y4x+KOlnyqla8AoWWpuBoYRxzXrfKuILl6SfiWCbjxoZJUaCBj1CjH7GIaDbc9kqBY3W/Rgjda1iqQcOJu2WW+76pZC9QG7M00dffe9hNnseupFL53r8F7YHSwJWUKP2q+k7RdsxyOB11n0xtOvnW4irMMFNV4H0uqwS5ExsmP9AxbDTc9JwgneAT5vTiUSm1E7BSflSt3bfa1tv8Di3R8n3Af7MNWzs49hmauE2wP+ttrq+AsWpFG2awvsuOqbipWHgtuvuaAE+A1Z/7gC9hesnr+7wqCwG8c5yAg3AL1fm8T9AZtp/bbJGwl1pNrE7RuOX7PeMRUERVaPpEs+yqeoSmuOlokqw49pgomjLeh7icHNlG19yjs6XXOMedYm5xH2YxpV2tc0Ro2jJfxC50ApuxGob7lMsxfTbeUv07TyYxpeLucEH1gNd4IKH2LAg5TdVhlCafZvpskfncCfx8pOhJzd76bJWeYFnFciwcYfubRc12Ip/ppIhA1/mSZ/RxjFDrJC5xifFjJpY2Xl5zXdguFqYyTR1zSp1Y9p+tktDYYSNflcxI0iyO4TPBdlRcpeqjK/piF5bklq77VSEaA+z8qmJTFzIWiitbnzR794USKBUaT0NTEsVjZqLaFVqJoPN9ODG70IPbfBHKK+/q/AWR0tJzYHRULOa4MP+W/HfGadZUbfw177G7j/OGbIs8TahLyynl4X4RinF793Oz+BU0saXtUHrVBFT/DnA3ctNPoGbs4hRIjTok8i+algT1lTHi4SxFvONKNrgQFAq2/gFnWMXgwffgYMJpiKYkmW3tTg3ZQ9Jq+f8XN+A5eeUKHWvJWJ2sgJ1Sop+wwhqFVijqWaJhwtD8MNlSBeWNNWTa5Z5kPZw5+LbVT99wqTdx29lMUH4OIG/D86ruKEauBjvH5xy6um/Sfj7ei6UUVk4AIl3MyD4MSSTOFgSwsH/QJWaQ5as7ZcmgBZkzjjU1UrQ74ci1gWBCSGHtuV1H2mhSnO3Wp/3fEV5a+4wz//6qy8JxjZsmxxy5+4w9CDNJY09T072iKG0EnOS0arEYgXqYnXcYHwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==);
 
-    .squiggle {
-    background: url(/assets/underline/Squiggle\ shape.svg) repeat-x;
-    background-size: 183px;
-    background-position: 0% 89%;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
-    }
-  </style>
-</head>
+        /* --pico-font-family: "Sansita", sans-serif; */
+        /* --pico-font-weight: 700; */
+      }
 
-<body>
-    <header class="container-fluid"><nav>
-      <ul>
-        <li><a href="#" class="secondary"</a></li>
-      </ul>
-      <ul>
-        <div style="display:inline-block;">
-          <div style="width:100px;height:auto;display:inline-block;">
-            {% include logo/underline-svg.html %}
+      .wave {
+        --c: var(--red);
+        /* Color */
+        --t: 7px;
+        /* Thickness */
+        --h: 24px;
+        /* Height  */
+        --w: 72px;
+        /* Width  */
+        --p: 11px;
+        /* adjust this to correct the position when changing the other values*/
+
+        width: calc(var(--w) * 6);
+        height: calc(var(--h) + 10px);
+        overflow: hidden;
+        position: relative;
+        mix-blend-mode: multiply;
+        margin-top: -84px;
+        margin-left: 5px;
+      }
+
+      .wave-large {
+        margin-top: -78px;
+      }
+
+      .wave:before {
+        content: "";
+        position: absolute;
+        padding: 5px 0;
+        top: 0;
+        left: 0;
+        width: 200%;
+        bottom: 0;
+
+        background: radial-gradient(
+            farthest-side at 50% calc(100% + var(--p)),
+            transparent 47%,
+            var(--c) 50% calc(50% + var(--t)),
+            transparent calc(52% + var(--t))
+          ),
+          radial-gradient(
+            farthest-side at 50% calc(0% - var(--p)),
+            transparent 47%,
+            var(--c) 50% calc(50% + var(--t)),
+            transparent calc(52% + var(--t))
+          );
+
+        background-size: var(--w) var(--h);
+        background-position: calc(var(--w) / 2) calc(-1 * (var(--h) / 2)),
+          0px calc(var(--h) / 2);
+        background-repeat: repeat-x;
+        background-origin: content-box;
+
+        animation: move 10s infinite linear reverse;
+      }
+
+      @keyframes move {
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      .logo {
+        text-shadow: 1px 1px var(--box-shadow-color),
+          2px 2px var(--box-shadow-color), 3px 3px var(--box-shadow-color),
+          4px 4px var(--box-shadow-color), 5px 5px var(--box-shadow-color),
+          6px 6px var(--box-shadow-color), 7px 7px var(--box-shadow-color),
+          8px 8px var(--box-shadow-color), 9px 9px var(--box-shadow-color),
+          10px 10px var(--box-shadow-color), 11px 11px var(--box-shadow-color),
+          12px 12px var(--box-shadow-color), 13px 13px var(--box-shadow-color),
+          14px 14px var(--box-shadow-color), 15px 15px var(--box-shadow-color),
+          16px 16px var(--box-shadow-color), 17px 17px var(--box-shadow-color),
+          18px 18px var(--box-shadow-color), 19px 19px var(--box-shadow-color),
+          20px 20px var(--box-shadow-color);
+        /* mix-blend-mode: multiply; */
+        /* background-blend-mode: multiply; */
+      }
+
+      .squiggle {
+        background: url("/assets/underline/squiggle.svg") repeat-x;
+        background-size: 140px;
+        background-position: 0% 100%;
+        box-decoration-break: clone;
+        background-color: ;
+        -webkit-box-decoration-break: clone;
+        mix-blend-mode: multiply;
+        display: inline-block;
+      }
+      .squiggle span {
+        text-wrap: nowrap;
+        mix-blend-mode: multiply;
+        color: var(--red);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="container-fluid">
+      <nav>
+        <ul>
+          <li><a href="#" class="secondary"></a></li>
+        </ul>
+        <ul>
+          <div style="display: inline-block">
+            <div style="width: 100px; height: auto; display: inline-block">
+              {% include logo/underline-svg.html %}
+            </div>
           </div>
-        </div>
-      </ul>
-      <ul>
-        <li><a href="#" class="secondary"></a></li>
-      </ul>
-    </nav></header>
+        </ul>
+        <ul>
+          <li><a href="#" class="secondary"></a></li>
+        </ul>
+      </nav>
+    </header>
     <main class="container">{{content}}</main>
     <footer class="container-fluid">
-      <div style="text-align:center;">
-        <img src="assets/underline/Underline Logo with Type_transparent.png" style="max-height: 100px;">
-        </div>
+      <div style="text-align: center">
+        <img
+          src="assets/underline/Underline Logo with Type_transparent.png"
+          style="max-height: 100px"
+        />
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
