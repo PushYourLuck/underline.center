@@ -10,6 +10,7 @@ colors:
   - pink
   - blue
   - black
+title: Launch Party
 ---
 
 <style>
