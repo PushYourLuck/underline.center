@@ -118,7 +118,7 @@ With love and squiggles,<br>Punjit & Karthik
 * 🎁 If you are considering getting us a gift, we'd prefer:
     * 🪴a small shade-friendly plant for our terrace garden
     * 📎something small we can put on display on our main shelf
-* 👯🏽 If you have +1(s), please share this link https://underline.center/launch-party and have them RSVP.
+* 👯🏽 If you have +1(s), please share this link <a href="https://underline.center/launch-party" target="_blank">https://underline.center/launch-party</a> and have them RSVP. 
 
 
 <script>
