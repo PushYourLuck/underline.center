@@ -108,7 +108,9 @@ We'd love to show you what we've been working on for the past few months. This s
 We've got food, drinks, games, and other activities so please plan to stay for a while.
 
 With love and squiggles,<br>Punjit & Karthik
-
+<div style="text-align:center">
+<h1 style="background-color: var(--green);border-radius: 100px;display:inline-block;padding: 0.3em 1.4em;"><a href="https://chat.whatsapp.com/JwVUMXDNvXWKnuzP4DPvFm" style="text-decoration:none;mix-blend-mode:lighten;color: #e2d9d9;">RSVP</a></h1>
+</div>
 # FAQs:
 * 🚫 We won't have any alcohol since it's a commercial property (BYOB _isn't_ allowed either)
 * 🕥 We will wrap up by 10:30pm
