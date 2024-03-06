@@ -99,17 +99,23 @@ title: Launch Party
       }
 </style>
 
-Hello <span class="squiggle" id="name"></span>, come see our new space/hang with us this sunday night at link from 6:30pm onwards.
+# Hello <span class="squiggle" id="name"></span>
 
-We've got food, drinks, and some activities planned so please plan to stay for a while.
+We'd love to show you what we've been working on the past few months. This space is nothing without the people and community to fill it, and you are needed to help make it _our_ space.
 
-FAQs:
-* Dress code: wear something printed or with squiggly lines (see our social media)
-* If you are considering getting us a gift:
-    * a small plant for our terrace garden
-    * something small we can put on display in our shelf
-* We can't have alcohol since it's a commercial property (BYOB _isn't_ allowed either)
-* We'll wind up around 10:30pm
+**Join us this Sunday at 6:30pm at the <a href="https://maps.app.goo.gl/qa4yF16LJ7cGSE6EA" target="_blank">Underline Center</a>**.
+
+We've got food, drinks, games, and other activities so please plan to stay for a while.
+
+With love and squiggles,<br>Punjit & Karthik
+
+# FAQs:
+* We won't have any alcohol since it's a commercial property (BYOB _isn't_ allowed either)
+* We will wrap up by 10:30pm
+* Suggested dress code: Anything with prints, squiggly lines, or abstract shapes and colors.
+* If you are considering getting us a gift, we'd prefer:
+    * a small shade-friendly plant for our terrace garden
+    * something small we can put on display in our main shelf
 
 
 <script>
