@@ -99,7 +99,7 @@ title: Launch Party
       }
 </style>
 
-# Hello <span class="squiggle" id="name"></span>
+# Hi <span class="squiggle" id="name"></span>
 
 We'd love to show you what we've been working on for the past few months. This space is nothing without the people and community to fill it, and you are needed to help make it _our_ space.
 
