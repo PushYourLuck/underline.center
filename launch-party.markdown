@@ -118,6 +118,7 @@ With love and squiggles,<br>Punjit & Karthik
 * 🎁 If you are considering getting us a gift, we'd prefer:
     * 🪴a small shade-friendly plant for our terrace garden
     * 📎something small we can put on display on our main shelf
+* 👯🏽 If you have +1(s), please have them RSVP. The invite we've made just for you. :)
 
 
 <script>
