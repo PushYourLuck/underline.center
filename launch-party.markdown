@@ -118,7 +118,7 @@ With love and squiggles,<br>Punjit & Karthik
 * 🎁 If you are considering getting us a gift, we'd prefer:
     * 🪴a small shade-friendly plant for our terrace garden
     * 📎something small we can put on display on our main shelf
-<li id="cant-invite">👯🏽 If you have +1(s), please share this link <a href="https://underline.center/launch-party" target="_blank">https://underline.center/launch-party</a> and have them RSVP. </li>
+  <li id="cant-invite">👯🏽 If you have +1(s), please share this link <a href="https://underline.center/launch-party" target="_blank">https://underline.center/launch-party</a> and have them RSVP. </li>
 
 
 <script>
@@ -128,7 +128,7 @@ const name = atob(queryParams.get('~') || 'ZnJpZW5k').replace(/[<\>]+/g, '');
 const el = document.getElementById('name');
 el.innerHTML = name;
 const hideEl = document.getElementById('cant-invite');
-if(!name) {
+if(name=='friend') {
   hideEl.style.display='none';
 }
   
