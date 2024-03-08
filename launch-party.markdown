@@ -126,7 +126,7 @@ const queryParams = new URLSearchParams(window.location.search);
 const name = atob(queryParams.get('~') || 'ZnJpZW5k').replace(/[<\>]+/g, '');
 
 const el = document.getElementById('name');
-el.innerHTML = name;
+el.textContent = name;
 const hideEl = document.getElementById('cant-invite');
 if(name=='friend') {
   hideEl.style.display='none';
