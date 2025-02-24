@@ -99,17 +99,15 @@ title: UC turns one!
       }
 </style>
 
-# Hi <span class="squiggle" id="name1"></span>
+# It's our first birthday
 
-Underline Center turns one this Friday, February 28th and we want to celebrate it with you.
+We're hosting a small gathering at 8:30pm this Friday, February 28th and we want to celebrate it with you <span class="squiggle" id="name1"></span>.
 
-We set out to build a warm and welcoming community space and we could not have done done it without you, <span class="squiggle" id="name2"></span>.
-
-We'd like to hang out with you and celebrate, and also take the opportunity to talk about the upcoming year.
+We set out to build a warm and welcoming community space, and it wouldn't have been possible without you. So please come hang out with us and celebrate as we look ahead at the upcoming year.
 
 With love and squiggles,<br>Punjit & Karthik
 
-# FAQs:
+# FAQs
 
 - 🚫 We won't have any alcohol since it's a commercial property (BYOB _isn't_ allowed either)
 - 🕥 We will wrap up by 11pm
@@ -119,9 +117,7 @@ const queryParams = new URLSearchParams(window.location.search);
 const name = atob(queryParams.get('~') || 'ZnJpZW5k').replace(/[<\>]+/g, '');
 
 const el1 = document.getElementById('name1');
-const el2 = document.getElementById('name2');
 el1.textContent = name;
-el2.textContent = name;
   
 </script>
 
