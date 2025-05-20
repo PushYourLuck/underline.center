@@ -7,7 +7,7 @@ permalink: /work-from-underline
 
 Are you tired of working out of the same place every day? Is there an overdue to-do list looming over your head? Would a change of scenery help you focus and get work done? You can work out of our space from 10am-5pm on weekdays!
 
-We have a suggested price of Rs. 399/day, but you can pay-what-you-want. You **don't need to pay in advance**, so please come use the space and pay after you leave.
+We have a suggested price of Rs. 399/day, but you can pay-what-you-want depending on your judgement. You **don't need to pay in advance**, so please come use the space first. We'll share a link to a webpage where you can make a payment. We follow an honor system and we won't ask anyone if they've paid or not.
 
 You can RSVP buy clicking on the floating button on the bottom right corner of this page.
 
