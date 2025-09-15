@@ -6,7 +6,7 @@ permalink: /mahjong
 ## 大家好 (dàjiā hǎo), Bangalore Mahjong Clinic players!
 
 
-We are a cozy community space in Indiranagar (right next door to Lavonne). We are on weekdays (Mon-Fri), between 9am and 5pm for you to come play Mahjong.
+We are a cozy community space in Indiranagar (right next door to Lavonne). We are open on weekdays (Mon-Fri), between 9am and 5pm if you have a group what would like to play Mahjong. On weekday evenings and on weekends we host different community events around board games, puzzles, film screenings, improv theatre, origami, and more.
 
 For folks from Bangalore Mahjong Clinic, we're happy to offer our space at rate of Rs. 150/person/hour. You can contact me via WhatsApp ( [+919790532594](tel:+919790532594)) if you'd like to make a reservation. No pre-payment necessarily.
 
@@ -21,6 +21,7 @@ For folks from Bangalore Mahjong Clinic, we're happy to offer our space at rate 
 ### FAQs
 
 **Do you have a Mahjong set?**
+
 Unfortunately we don't have any Mahjong sets at our space. You will need to bring your own. We do have a few black tablemats that can be used to protect the tiles.
 
 
