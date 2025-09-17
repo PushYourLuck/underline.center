@@ -1,0 +1,231 @@
+---
+permalink: /bingo
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    font-family: "pragmatica-extended", sans-serif;
+font-style: normal;
+    background-attachment: fixed; /* Ensure the gradient stays in place while scrolling */
+  font-weight: 400;
+      overflow-x: hidden; /* Prevent horizontal scrolling */;
+}
+
+
+#background-container {
+      width: 100vh;
+      height: 100vh;
+}
+
+#bingo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  margin-top: 0%;
+  padding: 0 5%;
+}
+
+#bingo-header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Ensure it takes the full width of the container */
+    font-size: 1.6rem;
+    margin-bottom: 0px;
+    color: rgba(234, 142, 50, 1);
+    font-weight: 700;
+  padding: 15px;
+}
+
+.bingo-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    padding-bottom: 160px;
+}
+
+.bingo-tile {
+    position: relative;
+    border: none;
+    padding: 10px;
+    height: 15vh;
+    padding-bottom: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .55rem; /* Initial font size */
+    box-sizing: border-box;
+    overflow: hidden; /* Ensure text does not overflow */
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.bingo-tile span {
+    display: block;
+    text-align: center;
+    word-wrap: break-word; /* Ensure long words break properly */
+    overflow-wrap: break-word;
+      line-height: 85%;
+    white-space: normal; /* Allow text to wrap */
+    color: rgba(0, 0, 0, 1);
+}
+
+.bingo-tile img {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    margin-left: auto;
+  margin-right: auto;
+    object-fit: contain;
+    opacity: 1;
+    display: none;
+
+}
+
+.bingo-tile.active img {
+    display: block;
+}
+
+
+
+    </style>
+    <link rel="stylesheet" href="assets/printed.min.css">
+</head>
+<body>
+  <div id="background-container">
+    <div id="bingo-container">
+    </div>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bignumber.js/9.1.2/bignumber.min.js" integrity="sha512-9JMv6qShmz4L6iAvMaEoIaFtS4XGSk/jeTSR2vzieg0XS5njYvBvYk0YcvI59dLN/0B+QnG5HfGR+Mqubl78SA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="/assets/rusha.min.js"></script>
+<script>
+
+
+
+// function that gets a random value from data for a given point value and ensure the points are unique for a given board name which is not part of the data
+function getRandomValue(data, pointValue, boardName) {
+    const filteredData = data[pointValue].filter(item => !item.usedIn || !item.usedIn.includes(boardName));
+    if (filteredData.length === 0) return null; // No available items for this point value
+    const randomIndex = Math.floor(Math.random() * filteredData.length);
+    const selectedItem = filteredData[randomIndex];
+    
+    // Mark the item as used in the current board
+    if (!selectedItem.usedIn) {
+        selectedItem.usedIn = [];
+    }
+    selectedItem.usedIn.push(boardName);
+    
+    return selectedItem;
+}
+
+
+Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vStiw0jX-78c3CDY8EbLcGsfaf9cMNISoxDH4QrO8CQQxGJrM-eIX2ssobEOtzeW8BxUzEQ5lvK_knK/pub?gid=1648893520&single=true&output=csv", {
+    download: true,
+    header: true,
+    complete: function (results, file) {
+
+        const data = {
+            1:[],
+            2:[],
+            3:[],
+            4:[],
+            5:[]
+        }
+        results.data.forEach((row, index) => {
+            if (row['points'] && row['points'].trim() !== '') {
+                const points = parseInt(row['points'], 10);
+                if (points >= 1 && points <= 5) {
+                    data[points].push(row);
+                }
+            }
+        });
+        console.log(data);
+
+        const NUM_OF_BOARDS = 10;
+
+        // create a bingo board for each 25 items in the data based on the following logic of where point values are placed
+        //  1	3	5	2	4
+        //  2	4	1	3	5
+        //  3	5	2	4   1
+        //  4	1	3	5	2
+        //  5	2	4	1	3
+        const pointPlacement = [
+            1, 3, 5, 2, 4,
+            2, 4, 1, 3, 5,
+            3, 5, 2, 4, 1,
+            4, 1, 3, 5, 2,
+            5, 2, 4, 1, 3
+        ];
+
+
+        for (let i = 0; i < NUM_OF_BOARDS; i++) {
+            pointPlacement.forEach((pointValue, index) => {
+                const bingoBoardNumber = i;
+                const boardName = `bingo-board-${bingoBoardNumber}`;
+                const randomValue = getRandomValue(data, pointValue, boardName);
+                
+                if (randomValue) {
+                    // Create a tile for the bingo board
+                      let bingoBoard = document.getElementById(`bingo-board-${bingoBoardNumber}`);
+                    // if bingoBoard does not exist, create it
+                    if (!bingoBoard) {
+                        const newBingoBoard = document.createElement('div');
+                        newBingoBoard.id = `bingo-board-${bingoBoardNumber}`;
+                        newBingoBoard.className = 'bingo-board';
+                        document.getElementById('bingo-container').appendChild(newBingoBoard);
+                        bingoBoard = newBingoBoard;
+                    }
+                    if (bingoBoard) {
+                        const tile = document.createElement('div');
+                        tile.className = 'bingo-tile';
+                        tile.innerHTML = `<span style='font-size:16px;'><br/><span style='font-size:16px; font-weight:600; padding-bottom:10px;'>${randomValue['big_text']}</span>${randomValue['small_text']}</span>`;
+                        bingoBoard.appendChild(tile);
+                    }
+                }
+            });
+        }
+        
+        // results.data.forEach((row, index) => {
+            
+        //     const bingoBoardNumber = Math.floor((index)/25)
+            
+
+        //     let bingoBoard = document.getElementById(`bingo-board-${bingoBoardNumber}`);
+        //     // if bingoBoard does not exist, create it
+        //     if (!bingoBoard) {
+        //         const newBingoBoard = document.createElement('div');
+        //         newBingoBoard.id = `bingo-board-${bingoBoardNumber}`;
+        //         newBingoBoard.className = 'bingo-board';
+        //         document.getElementById('bingo-container').appendChild(newBingoBoard);
+        //         bingoBoard = newBingoBoard;
+        //     }
+            
+
+
+
+        //     const tile = document.createElement('div');
+        //     tile.className = 'bingo-tile';
+        //     tile.innerHTML = `<span style='font-size:13px;'>${row['small_text']}<br/><span style='font-size:16px; font-weight:600; padding-top:10px;'>${row['big_text']}</span></span>`;
+        //     bingoBoard.appendChild(tile);
+        // });
+    }
+});
+    
+</script>
+</body>
+</html>
