@@ -182,13 +182,15 @@
             return sfc32(hash[0], hash[1], hash[2], hash[3]);
         }
 
-        function generateRandomSeed() {
+        function generateRandomSeed(rowCount) {
             const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
             let seed = '';
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 3; i++) {
                 seed += chars.charAt(Math.floor(Math.random() * chars.length));
             }
-            return seed;
+            // Encode rowCount in 2 chars (Base36, max 1295)
+            const countPart = Math.min(rowCount, 1295).toString(36).toUpperCase().padStart(2, '0');
+            return seed + countPart;
         }
 
         // function that gets a random value from data for a given point value and ensure the points are unique for a given board name which is not part of the data
@@ -213,6 +215,19 @@
             download: true,
             header: true,
             complete: function (results, file) {
+                const urlParams = new URLSearchParams(window.location.search);
+                const urlSeed = urlParams.get('seed')?.toUpperCase();
+
+                let rows = results.data;
+                const originalRowCount = rows.length;
+
+                // If seed is provided and is 5 chars, slice rows to the count encoded in the seed
+                if (urlSeed && urlSeed.length === 5) {
+                    const snapshotSize = parseInt(urlSeed.slice(3), 36);
+                    if (!isNaN(snapshotSize)) {
+                        rows = rows.slice(0, snapshotSize);
+                    }
+                }
 
                 const data = {
                     '1G': [], '1I': [],
@@ -221,7 +236,7 @@
                     '4G': [], '4I': [],
                     '5G': [], '5I': []
                 }
-                results.data.forEach((row, index) => {
+                rows.forEach((row, index) => {
                     if (row['points'] && row['points'].trim() !== '') {
                         const points = parseInt(row['points'], 10);
                         const category = row['category'] ? row['category'].trim() : 'G'; // Default to G if category is missing
@@ -232,9 +247,6 @@
                     }
                 });
                 console.log(data);
-
-                const urlParams = new URLSearchParams(window.location.search);
-                const urlSeed = urlParams.get('seed')?.toUpperCase();
 
                 const NUM_OF_BOARDS = urlSeed ? 1 : 10;
 
@@ -269,7 +281,7 @@
                 }
 
                 for (let i = 0; i < NUM_OF_BOARDS; i++) {
-                    const boardSeed = urlSeed || generateRandomSeed();
+                    const boardSeed = urlSeed || generateRandomSeed(originalRowCount);
                     const boardRandom = createRandom(boardSeed);
                     const rotations = Math.floor(boardRandom() * 4);
                     const rotatedPlacement = rotateGrid(pointPlacement, rotations);
