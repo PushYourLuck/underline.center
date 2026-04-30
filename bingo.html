@@ -185,7 +185,7 @@
         function generateRandomSeed(rowCount) {
             const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
             let seed = '';
-            for (let i = 0; i < 3; i++) {
+            for (let i = 0; i < 4; i++) {
                 seed += chars.charAt(Math.floor(Math.random() * chars.length));
             }
             // Encode rowCount in 2 chars (Base36, max 1295)
@@ -221,9 +221,17 @@
                 let rows = results.data;
                 const originalRowCount = rows.length;
 
-                // If seed is provided and is 5 chars, slice rows to the count encoded in the seed
-                if (urlSeed && urlSeed.length === 5) {
-                    const snapshotSize = parseInt(urlSeed.slice(3), 36);
+
+                if (urlSeed) {
+                    let snapshotSize = NaN;
+                    if (urlSeed.length === 6) {
+                        // New format: 4 random + 2 row-count
+                        snapshotSize = parseInt(urlSeed.slice(4), 36);
+                    } else if (urlSeed.length === 5) {
+                        // Backward compatibility format: 3 random + 2 row-count
+                        snapshotSize = parseInt(urlSeed.slice(3), 36);
+                    }
+
                     if (!isNaN(snapshotSize)) {
                         rows = rows.slice(0, snapshotSize);
                     }
