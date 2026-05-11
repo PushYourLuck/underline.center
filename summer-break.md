@@ -10,7 +10,7 @@ title: Summer Break 2026
     </div>
     <div>
       <p class="pico-color-slate-500" style="font-size: 1.2rem; line-height: 1.6;">
-        We’re hosting a curated series of workshops and activities designed specifically for teenagers, running during the weekdays (Mon-Friday) from May 18th to May 29th. Each session will be for a ~3 days, and in the day time (before 5pm).
+        We’re hosting a curated series of workshops and activities designed specifically for teenagers (13-18), running Monday to Friday from May 25th to May 29th. Each session will be for a ~3 days, and in the day time (before 5pm).
       </p>
     </div>
   </div>
@@ -94,7 +94,7 @@ title: Summer Break 2026
 <p>We have a bunch of fun activities and workshops lined up for teenagers during the weekdays between 18th May and 29th May.</p>
 -->
 <p>
-        We'll have more details to share soon. Sign up to be the first to know once we have the schedule ready! There will be limited spots.
+        We'll have more details to share soon. Sign up to be the first to know once we have the schedule ready! There will be limited spots per workshop.
       </p>
 
   <iframe data-tally-src="https://tally.so/embed/VLogb6?hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="790" frameborder="0" marginheight="0" marginwidth="0" title="Underline Summer Break"></iframe>
