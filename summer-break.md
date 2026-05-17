@@ -154,7 +154,7 @@ title: Summer Break 2026
     <h4>Improvised Theater Workshop</h4>
     <p>A fun and high-energy workshop where you'll learn the fundamentals of improv. Build confidence, creativity, and quick-thinking skills through play and performance. Stay tuned for more details and dates!</p>
     <footer>
-      <span class="date-tag">Dates & Times Coming Soon</span>
+      <!-- <span class="date-tag">Dates & Times TBA</span> -->
       <a href="#" class="button" style="background-color: var(--black); opacity: 0.5; pointer-events: none;">Coming Soon</a>
     </footer>
   </article>
@@ -165,7 +165,7 @@ title: Summer Break 2026
     <h4>Tabletop Role Playing Workshop</h4>
     <p>Dive into the world of storytelling and collaborative world-building. Learn how to create characters, navigate epic quests, and master the art of the TTRPG. Full details and schedule will be announced shortly.</p>
     <footer>
-      <span class="date-tag">Dates & Times Coming Soon</span>
+      <!-- <span class="date-tag">Dates & Times TBA</span> -->
       <a href="#" class="button" style="background-color: var(--black); opacity: 0.5; pointer-events: none;">Coming Soon</a>
     </footer>
   </article>
