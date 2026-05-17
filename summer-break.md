@@ -130,7 +130,7 @@ title: Summer Break 2026
   <article class="event-card">
     <img src="https://underline.center/uploads/default/optimized/1X/9f4864fe817b2b1a96e6365a1ea552fbd7ccc6cd_2_1035x582.jpeg" alt="Modular Origami Workshop">
     <h4>Modular Origami Workshop</h4>
-    <p>Discover the art of folding multiple identical paper units and locking them together to build stunning 3D structures. Build spatial reasoning, precision, and patience while exploring the intersection of craft, mathematics, and design.<a class="details-link" onclick="document.getElementById('modal-origami').showModal()">Details...</a></p>
+    <p>Discover the art of folding multiple identical paper units and locking them together to build complex 3D structures. Build spatial reasoning, precision, and patience while exploring the intersection of craft, mathematics, and design.<a class="details-link" onclick="document.getElementById('modal-origami').showModal()">Details...</a></p>
     <footer>
       <span class="date-tag">Mon–Fri, May 25–29, 11am–1pm</span>
       <a href="https://district.in/modular-origami-workshop-for-teens-with-roligami-may25-2026/event" class="button" target="_blank">Buy Tickets (₹2999)</a>
@@ -145,6 +145,28 @@ title: Summer Break 2026
     <footer>
       <span class="date-tag">Mon–Fri, May 25–29, 2:30pm–4:30pm</span>
       <a href="https://district.in/piece-it-together-jigsaw-puzzle-summer-camp-with-playful-pursuits-may25-2026/event" class="button" target="_blank">Buy Tickets (₹2999)</a>
+    </footer>
+  </article>
+
+  <h3 style="color: var(--blue); border-left: 4px solid var(--blue); padding-left: 1rem; margin-top: 4rem;">IMPROV LORE</h3>
+  <article class="event-card">
+    <div style="width: 100%; aspect-ratio: 16 / 9; background: var(--blue); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; opacity: 0.2;">COMING SOON</div>
+    <h4>Improvised Theater Workshop</h4>
+    <p>A fun and high-energy workshop where you'll learn the fundamentals of improv. Build confidence, creativity, and quick-thinking skills through play and performance. Stay tuned for more details and dates!</p>
+    <footer>
+      <span class="date-tag">Dates & Times Coming Soon</span>
+      <a href="#" class="button" style="background-color: var(--black); opacity: 0.5; pointer-events: none;">Coming Soon</a>
+    </footer>
+  </article>
+
+  <h3 style="color: var(--pink); border-left: 4px solid var(--pink); padding-left: 1rem; margin-top: 4rem;">BY THARUNYA</h3>
+  <article class="event-card">
+    <div style="width: 100%; aspect-ratio: 16 / 9; background: var(--pink); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; opacity: 0.2;">COMING SOON</div>
+    <h4>Tabletop Role Playing Workshop</h4>
+    <p>Dive into the world of storytelling and collaborative world-building. Learn how to create characters, navigate epic quests, and master the art of the TTRPG. Full details and schedule will be announced shortly.</p>
+    <footer>
+      <span class="date-tag">Dates & Times Coming Soon</span>
+      <a href="#" class="button" style="background-color: var(--black); opacity: 0.5; pointer-events: none;">Coming Soon</a>
     </footer>
   </article>
 </div>
