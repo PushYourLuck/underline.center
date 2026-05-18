@@ -148,9 +148,20 @@ title: Summer Break 2026
     </footer>
   </article>
 
+  <h3 style="color: var(--aqua); border-left: 4px solid var(--aqua); padding-left: 1rem; margin-top: 4rem;">BY KAVIYA</h3>
+  <article class="event-card">
+    <div style="width: 100%; aspect-ratio: 3 / 1; background: var(--aqua); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; opacity: 0.2;">COMING SOON</div>
+    <h4>Stand By Me: Learn Your First Song on Ukulele</h4>
+    <p>Grab a ukulele and learn how to play the timeless classic 'Stand By Me'. This beginner-friendly workshop will guide you through basic chords and strumming patterns. No prior musical experience required!<a class="details-link" onclick="document.getElementById('modal-ukulele').showModal()">Details...</a></p>
+    <footer>
+      <!-- <span class="date-tag">Dates & Times TBA</span> -->
+      <a href="#" class="button" style="background-color: var(--black); opacity: 0.5; pointer-events: none;">Coming Soon</a>
+    </footer>
+  </article>
+
   <h3 style="color: var(--blue); border-left: 4px solid var(--blue); padding-left: 1rem; margin-top: 4rem;">IMPROV LORE</h3>
   <article class="event-card">
-    <div style="width: 100%; aspect-ratio: 16 / 9; background: var(--blue); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; opacity: 0.2;">COMING SOON</div>
+    <div style="width: 100%; aspect-ratio: 3 / 1; background: var(--blue); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; opacity: 0.2;">COMING SOON</div>
     <h4>Improvised Theater Workshop</h4>
     <p>A fun and high-energy workshop where you'll learn the fundamentals of improv. Build confidence, creativity, and quick-thinking skills through play and performance. Stay tuned for more details and dates!</p>
     <footer>
@@ -161,7 +172,7 @@ title: Summer Break 2026
 
   <h3 style="color: var(--pink); border-left: 4px solid var(--pink); padding-left: 1rem; margin-top: 4rem;">BY THARUNYA</h3>
   <article class="event-card">
-    <div style="width: 100%; aspect-ratio: 16 / 9; background: var(--pink); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; opacity: 0.2;">COMING SOON</div>
+    <div style="width: 100%; aspect-ratio: 3 / 1; background: var(--pink); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; opacity: 0.2;">COMING SOON</div>
     <h4>Tabletop Role Playing Workshop</h4>
     <p>Dive into the world of storytelling and collaborative world-building. Learn how to create characters, navigate epic quests, and master the art of the TTRPG. Full details and schedule will be announced shortly.</p>
     <footer>
@@ -297,6 +308,28 @@ title: Summer Break 2026
     </div>
     <footer>
       <a href="https://district.in/piece-it-together-jigsaw-puzzle-summer-camp-with-playful-pursuits-may25-2026/event" class="button" target="_blank">Buy Tickets (₹2999)</a>
+    </footer>
+  </article>
+</dialog>
+
+<dialog id="modal-ukulele">
+  <article>
+    <header>
+      <button aria-label="Close" rel="prev" onclick="document.getElementById('modal-ukulele').close()"></button>
+      <h3>Stand By Me: Learn Your First Song on Ukulele</h3>
+    </header>
+    <div class="modal-body">
+      <p>A fun and beginner-friendly 2-day ukulele workshop where you’ll learn the basics of playing, simple strumming patterns, and eventually play and sing Stand By Me together. Open to complete beginners as well as those who already play and want to brush up on rhythm, techniques, and sing-alongs.</p>
+      
+      <p>If you’ve always wanted to learn an instrument but didn’t know where to begin, this workshop is designed to make music feel approachable, playful, and easy to pick up. Learn beginner-friendly techniques, rhythm patterns, and how to play and sing a full song together with Kaviya.</p>
+      
+      <p>Stay tuned for more details and dates!</p>
+      <hr>
+      <p><strong>Who is Kaviya?</strong><br>
+      Kaviya is a ukulele teacher in Bangalore and an artist with 3+ years of experience, bringing music to students of all ages from curious 5-year-olds to first-time players at 50, with a firm belief that it’s impossible not to smile when you pick up a ukulele. A songwriter at heart, she writes to make sense of the world, loves poetry, taking long walks & spending time with her loved ones when she's not doing music.</p>
+    </div>
+    <footer>
+      <a href="#" class="button" style="background-color: var(--black); opacity: 0.5; pointer-events: none;">Coming Soon</a>
     </footer>
   </article>
 </dialog>
