@@ -343,6 +343,15 @@ og_image: https://underline.center/uploads/default/original/1X/5cbc8283e63d24cc3
 </div>
 -->
 
+<div id="contact" style="margin-top: 6rem; padding-top: 4rem; border-top: 1px dashed var(--black); text-align: center;">
+  <h2 style="margin-bottom: 1rem;">Questions?</h2>
+  <p style="font-size: 1.2rem; margin-bottom: 2rem;">If you have any questions about Summer Break 2026, feel free to reach out to <strong>Karthik</strong>.</p>
+  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+    <a href="tel:+919790532594" class="button" style="background-color: var(--teal);">Call +91 97905 32594</a>
+    <a href="https://wa.me/919790532594" class="button" style="background-color: #25D366; border-color: #25D366;">WhatsApp Karthik</a>
+  </div>
+</div>
+
 <!--
 <div id="register" style="margin-top: 4rem;">
 
