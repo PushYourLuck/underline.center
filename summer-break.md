@@ -1,6 +1,8 @@
 ---
 layout: underline-2
 title: Summer Break 2026
+description: A curated series of workshops and activities designed specifically for teenagers (13-18) at Underline Center.
+og_image: https://underline.center/uploads/default/original/1X/5cbc8283e63d24cc31043bc7aeb4b177d822fed0.png
 ---
 
 <style>
@@ -111,7 +113,7 @@ title: Summer Break 2026
     <p>Every ad you’ve ever ignored was designed by someone who knew exactly what would make you pause, whether that’s the colour, sound, or visuals. This workshop is about learning to see the machinery behind brands and influencers while finding your role as a critic.<a class="details-link" onclick="document.getElementById('modal-made-you-click').showModal()">Details...</a></p>
     <footer>
       <span class="date-tag">Mon–Tue, May 25–26, 9am–11am</span>
-      <a href="https://district.in/made-you-click-by-the-first-act-may25-2026/event" class="button" target="_blank">Buy Tickets (₹2599)</a>
+      <a href="https://at.underline.center/1J4kp" class="button" target="_blank">Buy Tickets (₹2599)</a>
     </footer>
   </article>
 
@@ -122,7 +124,7 @@ title: Summer Break 2026
     <p>A hands-on workshop using theatre and games to unpack the psychology behind social media. Discover why these apps are built to hook you, how they quietly shape your sense of self, and how to build an intentional relationship with your online world.<a class="details-link" onclick="document.getElementById('modal-irl-vs-url').showModal()">Details...</a></p>
     <footer>
       <span class="date-tag">Wed & Fri, May 27 & 29, 9am–11am</span>
-      <a href="https://district.in/irl-vs-url-by-the-first-act-may27-2026/event" class="button" target="_blank">Buy Tickets (₹2599)</a>
+      <a href="https://at.underline.center/NyLv2" class="button" target="_blank">Buy Tickets (₹2599)</a>
     </footer>
   </article>
 
@@ -133,7 +135,7 @@ title: Summer Break 2026
     <p>Discover the art of folding multiple identical paper units and locking them together to build complex 3D structures. Build spatial reasoning, precision, and patience while exploring the intersection of craft, mathematics, and design.<a class="details-link" onclick="document.getElementById('modal-origami').showModal()">Details...</a></p>
     <footer>
       <span class="date-tag">Mon–Fri, May 25–29, 11am–1pm</span>
-      <a href="https://district.in/modular-origami-workshop-for-teens-with-roligami-may25-2026/event" class="button" target="_blank">Buy Tickets (₹2999)</a>
+      <a href="https://at.underline.center/CrfRb" class="button" target="_blank">Buy Tickets (₹2999)</a>
     </footer>
   </article>
 
@@ -144,7 +146,7 @@ title: Summer Break 2026
     <p>Join our Jigsaw Puzzle Summer Camp for an exciting experience filled with puzzle-solving, teamwork, and speed! Improve your problem-solving and critical thinking skills, enhance pattern-recognition, and learn speed-puzzling techniques in a fun, collaborative environment.<a class="details-link" onclick="document.getElementById('modal-puzzle').showModal()">Details...</a></p>
     <footer>
       <span class="date-tag">Mon–Fri, May 25–29, 2:30pm–4:30pm</span>
-      <a href="https://district.in/piece-it-together-jigsaw-puzzle-summer-camp-with-playful-pursuits-may25-2026/event" class="button" target="_blank">Buy Tickets (₹2999)</a>
+      <a href="https://at.underline.center/AxYQv" class="button" target="_blank">Buy Tickets (₹2999)</a>
     </footer>
   </article>
 
@@ -199,7 +201,7 @@ title: Summer Break 2026
       <p>Follow us on instagram <strong>@thefirstactindia</strong></p>
     </div>
     <footer>
-      <a href="https://district.in/made-you-click-by-the-first-act-may25-2026/event" class="button" target="_blank">Buy Tickets (₹2599)</a>
+      <a href="https://at.underline.center/1J4kp" class="button" target="_blank">Buy Tickets (₹2599)</a>
     </footer>
   </article>
 </dialog>
@@ -221,7 +223,7 @@ title: Summer Break 2026
       <p>Follow us on instagram <strong>@thefirstactindia</strong></p>
     </div>
     <footer>
-      <a href="https://district.in/irl-vs-url-by-the-first-act-may27-2026/event" class="button" target="_blank">Buy Tickets (₹2599)</a>
+      <a href="https://at.underline.center/NyLv2" class="button" target="_blank">Buy Tickets (₹2599)</a>
     </footer>
   </article>
 </dialog>
@@ -259,7 +261,7 @@ title: Summer Break 2026
       Roli Agrawal, known as roligami, is a multi-disciplinary designer and passionate craft enthusiast who has been exploring and teaching origami for over a decade. Her workshops are a celebration of creativity. Follow her on Instagram <strong>@roligami</strong>.</p>
     </div>
     <footer>
-      <a href="https://district.in/modular-origami-workshop-for-teens-with-roligami-may25-2026/event" class="button" target="_blank">Buy Tickets (₹2999)</a>
+      <a href="https://at.underline.center/CrfRb" class="button" target="_blank">Buy Tickets (₹2999)</a>
     </footer>
   </article>
 </dialog>
@@ -307,7 +309,7 @@ title: Summer Break 2026
       Mercy Grace Solomon is an avid puzzler who combined her passion for puzzles with her background in education to create a space for meet-ups, workshops, and competitions. Instagram: <strong>@thepuzzleparlour</strong></p>
     </div>
     <footer>
-      <a href="https://district.in/piece-it-together-jigsaw-puzzle-summer-camp-with-playful-pursuits-may25-2026/event" class="button" target="_blank">Buy Tickets (₹2999)</a>
+      <a href="https://at.underline.center/AxYQv" class="button" target="_blank">Buy Tickets (₹2999)</a>
     </footer>
   </article>
 </dialog>
