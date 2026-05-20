@@ -150,6 +150,17 @@ og_image: https://underline.center/uploads/default/original/1X/5cbc8283e63d24cc3
     </footer>
   </article>
 
+  <h3 style="color: var(--pink); border-left: 4px solid var(--pink); padding-left: 1rem; margin-top: 4rem;">TABLETOP TALES</h3>
+  <article class="event-card">
+    <div style="width: 100%; aspect-ratio: 16 / 9; background: var(--pink); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; opacity: 0.2;">BY THARUNYA BALAN</div>
+    <h4>Tabletop Tales</h4>
+    <p>A 3-day roleplaying adventure for teens. If you have ever wondered what Dungeons and Dragons is all about, this workshop is for you! Discover what it means to play a character, make choices that matter, and tell a story that belongs to everyone at the table.<a class="details-link" onclick="document.getElementById('modal-tabletop').showModal()">Details...</a></p>
+    <footer>
+      <span class="date-tag">Wed–Fri, May 27–29, 10am–1pm</span>
+      <a href="#" class="button" style="background-color: var(--black); opacity: 0.5; pointer-events: none;">Coming Soon</a>
+    </footer>
+  </article>
+
   <h3 style="color: var(--aqua); border-left: 4px solid var(--aqua); padding-left: 1rem; margin-top: 4rem;">BY KAVIYA</h3>
   <article class="event-card">
     <div style="width: 100%; aspect-ratio: 3 / 1; background: var(--aqua); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; opacity: 0.2;">COMING SOON</div>
@@ -161,22 +172,12 @@ og_image: https://underline.center/uploads/default/original/1X/5cbc8283e63d24cc3
     </footer>
   </article>
 
+
   <h3 style="color: var(--blue); border-left: 4px solid var(--blue); padding-left: 1rem; margin-top: 4rem;">IMPROV LORE</h3>
   <article class="event-card">
     <div style="width: 100%; aspect-ratio: 3 / 1; background: var(--blue); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; opacity: 0.2;">COMING SOON</div>
     <h4>Improvised Theater Workshop</h4>
     <p>A fun and high-energy workshop where you'll learn the fundamentals of improv. Build confidence, creativity, and quick-thinking skills through play and performance. Stay tuned for more details and dates!</p>
-    <footer>
-      <!-- <span class="date-tag">Dates & Times TBA</span> -->
-      <a href="#" class="button" style="background-color: var(--black); opacity: 0.5; pointer-events: none;">Coming Soon</a>
-    </footer>
-  </article>
-
-  <h3 style="color: var(--pink); border-left: 4px solid var(--pink); padding-left: 1rem; margin-top: 4rem;">BY THARUNYA</h3>
-  <article class="event-card">
-    <div style="width: 100%; aspect-ratio: 3 / 1; background: var(--pink); border-radius: 12px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; opacity: 0.2;">COMING SOON</div>
-    <h4>Tabletop Role Playing Workshop</h4>
-    <p>Dive into the world of storytelling and collaborative world-building. Learn how to create characters, navigate epic quests, and master the art of the TTRPG. Full details and schedule will be announced shortly.</p>
     <footer>
       <!-- <span class="date-tag">Dates & Times TBA</span> -->
       <a href="#" class="button" style="background-color: var(--black); opacity: 0.5; pointer-events: none;">Coming Soon</a>
@@ -329,6 +330,33 @@ og_image: https://underline.center/uploads/default/original/1X/5cbc8283e63d24cc3
       <hr>
       <p><strong>Who is Kaviya?</strong><br>
       Kaviya is a ukulele teacher in Bangalore and an artist with 3+ years of experience, bringing music to students of all ages from curious 5-year-olds to first-time players at 50, with a firm belief that it’s impossible not to smile when you pick up a ukulele. A songwriter at heart, she writes to make sense of the world, loves poetry, taking long walks & spending time with her loved ones when she's not doing music.</p>
+    </div>
+    <footer>
+      <a href="#" class="button" style="background-color: var(--black); opacity: 0.5; pointer-events: none;">Coming Soon</a>
+    </footer>
+  </article>
+</dialog>
+
+<dialog id="modal-tabletop">
+  <article>
+    <header>
+      <button aria-label="Close" rel="prev" onclick="document.getElementById('modal-tabletop').close()"></button>
+      <h3>Tabletop Tales</h3>
+    </header>
+    <div class="modal-body">
+      <p><strong>A 3-day roleplaying adventure for teens</strong></p>
+      <p>Dungeons and Dragons! What's that?</p>
+      <p>Maybe you've watched characters talk about it on Stranger Things, The Big Bang Theory or Young Sheldon. Maybe you've seen that one special episode of Community, the IT Crowd or Ted. Maybe you've heard about Critical Role or Dimension 20. Or maybe you have one annoying friend who will not stop asking you to play D&D with them... Whatever the case may be, if you have ever wondered what it's all about, this workshop is for you!</p>
+      <p>At the core of every tabletop roleplaying game is a group of people coming together to build a world where none of them knows how the story ends. Over three 3-hour sessions, you will discover what it means to play a character, make choices that matter, and tell a story that belongs to everyone at the table.</p>
+      
+      <ul>
+        <li><strong>Day 1: Why Play?</strong> After a light lesson on TTRPGs in general, jump straight into Dread — a game played with a Jenga tower instead of dice — where every choice your character makes is one you can feel in your hands. Survival is key in this high stakes game, with no experience needed and very minimal rules.</li>
+        <li><strong>Day 2: Enter the World</strong> Your first session of Dungeons and Dragons begins not with a dungeon but with a world — people to talk to, questions to ask, and a mystery that won't solve itself. Embody your character in the world they are from and see how it reacts to their choices.</li>
+        <li><strong>Day 3: The Adventure</strong> This is what you are here for. Your second session of D&D raises the stakes, puts everything you've learned to the test, and ends the way only you and your party can make it end. Will you become the heroes you wish to be?</li>
+      </ul>
+      <hr>
+      <p><strong>Who is Tharunya Balan?</strong><br>
+      Tharunya Balan is an educator with a background in architecture and city planning, and years of experience running tabletop games for students and adults. She has taught people to play from scratch and guided stories that went completely off the rails in the best possible way. She hopes to foster creativity and confidence through the medium of roleplay and storytelling.</p>
     </div>
     <footer>
       <a href="#" class="button" style="background-color: var(--black); opacity: 0.5; pointer-events: none;">Coming Soon</a>
